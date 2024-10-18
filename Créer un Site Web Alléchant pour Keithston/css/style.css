@@ -19,12 +19,7 @@ nav ul{
 li{
     float: left;
 }
-/* a{
-    text-decoration: none;
-    display: block;
-    padding: 10px;
-    color: white;
-} */
+
 #hero{
     height: 100vh;
     width: 100%;
@@ -61,6 +56,7 @@ li{
     color: #ffffff ;
     margin-top: 210px;
     margin-left: 30px;
+    font-size: xx-large;
     /* height: 100vh; */
 }
 
@@ -70,6 +66,7 @@ li{
 }
 .hometext h1{
     font-size: 60px;
+    font-family: 'Sansita Swashed';
 }
 .hometext input{
     font-size: 20px;
@@ -164,8 +161,9 @@ footer{
     flex-direction: column;
 }
 .imgfooter img{
-    width: 130px;
+    width: 100%;
     margin-top: 20px;
+    max-width: 100%;
 }
 .cplfooter {
     display: flex;
@@ -247,12 +245,13 @@ width: 90%;
     justify-content: center;
     align-items: center;
 }
-.titelblog{
+.titelblog h1{
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 30px;
     margin: 100px;
+    font-family: 'Sansita Swashed';
 }
 .infocontainer img{
     height: 25px;
@@ -269,6 +268,7 @@ width: 90%;
 }
 .bottonadd:hover{
     background-color: #E9BD8C;
+    color: black;
 }
 .imagefrstof{
     background-image: url(../images/images/promotion.png);
@@ -285,6 +285,7 @@ width: 90%;
 .imagefrstof h1{
     font-size: 50px;
     color: brown;
+    font-family: 'Sansita Swashed';
 }
 .imagefrstof p{
     font-size: 15px;
@@ -306,8 +307,13 @@ width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 30px;
-    margin: 100px;
+    font-size: 35px;
+    margin: 80px;
+    font-family: 'Sansita Swashed';
+}
+.servicestitle .h1services{
+    font-family: 'Sansita Swashed';
+    font-size: 40px;
 }
 .servicescard{
     display: flex;
@@ -355,6 +361,7 @@ width: 90%;
 }
 .formecontactus .boton:hover{
     background-color: bisque;
+    color: black;
 }
 textarea{
     width: 350px;
@@ -375,6 +382,7 @@ textarea{
 .imageaboutus h1{
     font-size: 50px;
     color: rgb(254, 254, 254);
+    font-family: 'Sansita Swashed';
 }
 .imageaboutus p{
     font-size: 15px;
@@ -392,6 +400,7 @@ textarea{
 }
 .imageaboutus button:hover{
     background-color: #E9BD8C;
+    color: black;
 }
 .iconfotter{
     display: flex;
@@ -410,6 +419,7 @@ textarea{
 }
 .herderfeaturs:hover{
     color: #E9BD8C;
+    color: black;
 }
 
 .featuresimages{
@@ -427,3 +437,104 @@ textarea{
     margin-left: 15%;
     color: rgb(180, 45, 45);
 }
+@media only screen and (max-width: 600px) {
+    .logo{
+        padding: 15px;
+        margin-left: 5px;
+        margin-top: 12px;
+    }
+    .hometext{
+        color: #ffffff ;
+        margin-top: 25%;
+        margin-left: 30px;
+    }
+    
+    .hometext h4{
+        font-size: 22px;
+        color: bisque;
+        font-weight: 450;
+    }
+    .hometext h1{
+        font-size: 70px;
+        font-family: 'Sansita Swashed';
+    }
+    .hometext input{
+        font-size: 15px;
+        background-color: rgb(149, 47, 47);
+        color: white;
+        margin-top: 40px;
+        border-radius: 8px;
+        border: none;
+        background-size: 50px;
+        padding: 5px 15px;
+        margin-left: 10px;
+    }
+    .hometext a{
+        color: bisque;
+        margin-left: 10px;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 100;
+    }
+    #hero{
+        height: 100vh;
+        width: 100%;
+        background-image: url('../imgs/image\ 1.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .homenav a {
+        padding: 8px;
+        margin-left: 1px;
+        
+        font-size: 11px;
+      }
+      .card{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 20px;
+        border-radius: 10px;
+        background-image: url(../images/images/products/product-bg.png);
+        margin-bottom: 20px;
+        height: 390px;
+        background-repeat: no-repeat;
+    
+    }
+    .card .subbmitcontainer{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        color: #ffffff;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        margin-right: 40px;
+    }
+    .imagefrstof{
+        background-image: url(../images/images/promotion.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 55vh;
+    }
+    .imagefrstof{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .featuresimages img{
+        width: 45%;
+    }
+    .herderfeaturs{
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+    }
+    .servicescard{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+  }
